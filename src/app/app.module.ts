@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 import { AppComponent } from './app.component';
+import { ScatterChartComponent } from './scatter-chart/scatter-chart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScatterChartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
