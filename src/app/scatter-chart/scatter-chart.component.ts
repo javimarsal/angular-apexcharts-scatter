@@ -135,8 +135,8 @@ export class ScatterChartComponent implements OnInit {
     while (i < count) {
       var y =
         Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-
-      series.push({x: baseval, y: y, title: 'Hola', description: 'Hola cómo estás', id: 2});
+      console.log(new Date(baseval).toDateString())
+      series.push({x: new Date(baseval).toDateString(), y: y, title: 'Hola', description: 'Hola cómo estás', id: 2});
       baseval += 86400000;
       i++;
     }
